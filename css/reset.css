@@ -1,0 +1,27 @@
+@charset "utf-8";
+/* 모든 웹 작업 시 필수로 설정되는 CSS */
+*{ /* 모든 태그 선택자 */
+    margin: 0;/*나하고  부모 또는 다른 태그와의 여백*/
+    padding: 0;/*나하고 자식과의 여백 */
+    
+}
+html,body{
+    width:  100%; 
+    height: 100%;
+}
+
+
+
+ol,ul,li{
+    list-style: none;/*리스트 스타일*/
+}
+img{
+    border: 0;
+}
+a{
+    text-decoration: none;
+    color :#000000;
+}
+main,section,nav,header,footer,aside,article{
+    display: block;
+}

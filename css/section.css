@@ -1,0 +1,34 @@
+img{
+    width: 100%;
+    height: 100%;
+}
+.container{
+    width: 100%;
+    margin-top: 113px;
+}
+.sec1{
+    width: 100%;
+    height: 100vh;
+    background: #000;
+}
+.sec1 .gallery{
+    width: 100%;
+    height: 85%;
+    overflow: hidden;
+    position: relative;
+}
+.sec1 .gallery .inner_gallery{
+    width:300%;
+    height: 100%;
+    position: absolute;
+}
+.sec1 .gallery .inner_gallery ul{
+    display:flex;
+    height: 100%;
+}
+.sec1 .gallery .inner_gallery ul >li{
+    width: 33.3333%;
+    height: 100%;
+    box-sizing: border-box;
+   
+}
