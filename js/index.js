@@ -23,50 +23,45 @@ var idx=-1;
         if(idx>=galleryLi.length-1){
             idx=-1;
         }
+        itemsLi.eq(idx).addClass("on").siblings().removeClass("on");
         console.log(idx);
     }
     var set=setInterval(autogal,3000);
     
-    // var spanArrow=$("span.arrow");
-    // for(var i=0;i<spanArrow.length;i++){
-    //     spanArrow.eq(i).on("mouseover",itemsLiOver);
-    //     spanArrow.eq(i).on("mouseout",itemsLiOut);
-    // }
-    // itemsLi.on("mouseover",itemsLiOver);
-    // itemsLi.on("mouseout",itemsLiOut);
-    // function itemsLiOver(){
-    //     clearInterval(set);
-    // }
-    // function itemsLiOut(){
-    //     set=setInterval(autogal,3000);
-    // }
-    // itemsLi.on("click",itemsLiClick);
-    // function itemsLiClick(){
-    //     var idthis=$(this).index();//클릭한 li의 index
-    //     var gallerGab=galleryLi.eq(1).offset().left-galleryLi.eq(0).offset().left;
+
+    itemsLi.on("mouseover",itemsLiOver);
+    itemsLi.on("mouseout",itemsLiOut);
+    function itemsLiOver(){
+        clearInterval(set);
+    }
+    function itemsLiOut(){
+        set=setInterval(autogal,3000);
+    }
+    itemsLi.on("click",itemsLiClick);
+    function itemsLiClick(){
+        var idthis=$(this).index();//클릭한 li의 index
+        var gallerGab=galleryLi.eq(1).offset().left-galleryLi.eq(0).offset().left;
         
-    //     var goLeft=-(gallerGab*idthis);//gallery가 이동하는 거리
-    //     $(this).addClass('on').siblings().removeClass("on");
-    //     gallery.animate({"left":goLeft},200);//gallery가 goleft만큼 이동
-    //     //마지막 요소면 -> idx=-1;
-    //     if(idthis>=galleryLi.length-1){
-    //         idx=-1;
-    //     }else{
-    //         idx=idthis;
-    //     }
-    // }
-    //     $('span.arrow.arrowleft').on("click",leftFunc);
-        
-    //     function leftFunc(){
-    //         if(idx<=0){
-    //             idx=galleryLi.length;
-    //         }
-    //         idx--;
-    //         var galleryGab=galleryLi.eq(1).offset().left-galleryLi.eq(0).offset().left;
-    //         var goLeft=-(galleryGab*idx);
-    //        itemsLi.eq(idx).addClass("on").siblings().removeClass("on");
-    //         gallery.animate({"left":goLeft});
-            
-    //     }
+        var goLeft=-(gallerGab*idthis);//gallery가 이동하는 거리
+        $(this).addClass('on').siblings().removeClass("on");
+        gallery.animate({"left":goLeft},200);//gallery가 goleft만큼 이동
+        //마지막 요소면 -> idx=-1;
+        if(idthis>=galleryLi.length-1){
+            idx=-1;
+        }else{
+            idx=idthis;
+        }
+    }
+        $('span.arrow.arrowleft').on("click",leftFunc);
+        function leftFunc(){
+            if(idx<=0){
+                idx=galleryLi.length;
+            }
+            idx--;
+            var galleryGab=galleryLi.eq(1).offset().left-galleryLi.eq(0).offset().left;
+            var goLeft=-(galleryGab*idx);
+           itemsLi.eq(idx).addClass("on").siblings().removeClass("on");
+            gallery.animate({"left":goLeft});
+        }
     
         
