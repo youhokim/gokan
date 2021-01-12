@@ -6,10 +6,10 @@ img{
     width: 100%;
     margin-top: 113px;
 }
+/*sec1 시작*/
 .sec1{
     width: 100%;
     height: 100vh;
-    background: #000;
 }
 .sec1 .gallery{
     width: 100%;
@@ -29,6 +29,120 @@ img{
 .sec1 .gallery .inner_gallery ul >li{
     width: 33.3333%;
     height: 100%;
+    box-sizing: border-box;  
+}
+/*sec1 텍스트 박스*/
+.sec1 .gallery .sec1Textbox{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 3;
+}
+.sec1 .gallery .sec1Textbox.box1,
+.sec1 .gallery .sec1Textbox.box3{
+    top: 600px;
+    left: 10%;
+}
+.sec1 .gallery .sec1Textbox.box2{
+    top: 620px;
+    left: 10%;
+}
+.sec1 .gallery .sec1Textbox .menu{
+    font-size: 100px;
+    color: #eef;
+}
+.sec1 .gallery .sec1Textbox .Mexplanation{
+    font-size: 30px;
+    color: #eef;
+    margin: 20px 0px 0px 30px;
+    line-height: 60px;
+}
+.sec1 .prison{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.sec1 .items{
+    position: absolute;
+    bottom: 40px;
+    left: 45%;
+    width: 200px;
+}
+.sec1 .items ul{
+    display : flex;
+    justify-content: space-evenly;
+}
+.sec1 .items ul li{
+    width: 10px;
+    height: 10px;
+    background : #d6cfcd;
+    border-radius: 50%;
+}
+.sec1 .items ul li.on{
+    width: 15px;
+    height: 15px;
+    background : #fff;
+}
+/*container_Txt1 시작*/
+.container_Txt1{
+    width:100%;
+    text-align: center;
+    /* margin-right: 50px; */
+    margin: 0 auto;
+}
+.container_Txt1 .txt{
+    display: inline-block;
+    width: auto;
+    font-size: 50px;
+    color: #815e4b;
+    position: relative;
+}
+.container_Txt1 .txt::before{
+    display: block;
+    content: "";
+    width: 100%;
+    height: 4px;
+    position: absolute;
+    top:-20px;
+    background:#815e4b;
+}
+.container_Txt1 .txt::after{
+    display: block;
+    content: "";
+    width: 100%;
+    height: 4px;
+    position: absolute;
+    bottom:-20px;
+    background:#815e4b;
+}
+.container_Txt1 .logo{
+    width :auto;
+    font-size: 5em;
+    font-weight: bold;
+    color:#333;
+    margin-top: 50px;
+}
+.container_img{
+    width: 100%;
+    height: 600px;
+    margin-top: 150px;
+    background: url(../img/container_img.jpg)  no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+}
+.txtbox1{
+   padding-top: 85px;
     box-sizing: border-box;
-   
+    width: 100%;
+    height: auto;
+    font-size: 50px;
+    color:#fff;
+    line-height:200px;
+}
+
+.section.sec2{
+    width:100%;
+    height: 1000px;
 }
