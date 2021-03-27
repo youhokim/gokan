@@ -1,0 +1,30 @@
+@charset "utf-8";
+
+@media only screen and (min-width:768px) and (max-width:1328px) {
+    /*서브 헤더 시작*/
+    .nav{display: none;}
+    .Snav{display: block !important; padding:30px 10px 0px 0px;}
+    .navgnb{display: block!important;}
+    .navbar {display: block;width: 50px;height: 6px;background: #252525;margin: 8px 0px;border-radius: 10px}
+    .Snav:hover .navbar2 {width: 40px;transition: ease all .2s;}
+    .navgnb {position: fixed;top: 0px;right:-500px;width: 450px;height: 100%;background: #fff;z-index: 5;}
+    .navgnb ul{width: 90%;height: 90%;margin: 50px auto;}
+    .navgnb ul h1{line-height: 150px;border-bottom: 2px solid #ddd;color: #454545;font-family: "Dosis", sans-serif;}
+    .navgnb ul li{width: 100%;height: 10%;text-align: center;margin: 20px 0px;border-bottom: 2px solid #ddd;}
+    .navgnb ul li a{line-height: 105px;font-size: 30px;color: #454545;font-weight: bold;font-family: "Dosis", sans-serif;}
+    .navgnb .closeBox{width:25px;height: 25px;position: relative;top: 141px;left: 400px;cursor: pointer;}
+    .navgnb .closeBox .close{display: block;position: absolute;top: 10px;left: 0px;width:25px;height: 3px;background:#454545;border-radius: 20px;}
+    .navgnb .closeBox .close.Cbar1{transform: rotate(45deg);}
+    .navgnb .closeBox .close.Cbar2{transform: rotate(-45deg);}
+    /*main 시작*/
+    .sec1 .sec1Textbox .Mexplanation{font-size: 20px;}
+    .sec1 .sec1Textbox .menu{font-size: 60px;}
+    .txtbox1{font-size: 45px;}
+    .Smenu>ul{display:flex;flex-wrap: wrap; justify-content:space-around;margin:0 auto;}
+    .Smenu>ul>li img{width:50%}
+  }
+  
+  @media only screen and (min-width:768px) and (max-width:1092px) {
+    .Snav{display: block!important;}
+    .navgnb{display: block!important;}
+  }

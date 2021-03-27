@@ -8,6 +8,12 @@
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/index_header.css">
     <link rel="stylesheet" href="css/section.css">
+    <link rel="stylesheet" href="css/tablet.css">
+    <link rel="stylesheet" href="css/Mobalie.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 </head>
 <body>
     <div id="wrap">
@@ -39,14 +45,32 @@
                     <li><a href="#" class="bar">FRANCHISE</a></li>
                 </ul>
             </nav>
+            <div class="Snav">
+                <span class="navbar navbar1"></span>
+                <span class="navbar navbar2"></span>
+                <span class="navbar navbar3"></span>
+            </div>
+            <nav class="navgnb">
+                <div class="closeBox">
+                    <span class="close Cbar1"></span>
+                    <span class="close Cbar2"></span>
+                </div>
+                <ul>
+                  <h1>Menu</h1>
+                  <li><a href="#">BRAND</a></li>
+                  <li><a href="#">MENU</a></li>
+                  <li><a href="#">STORE</a></li>
+                  <li><a href="#">CONTACT</a></li>
+                  <li><a href="#">FRANCHISE</a></li>
+                </ul>
+            </nav>
         </header>
-        <div class="container">
+        <main class="main"> 
             <section class="section sec1">
-                <div class="gallery">
-                    <div class="inner_gallery">
-                        <ul>
-                            <li>
-                                <div class="prison">
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="prison">
                                 <img src="img/section1_0.jpg" alt="덮밥">
                                 <div class="sec1Textbox box1">
                                     <p class="menu">사케동</p>
@@ -55,9 +79,9 @@
                                     </p>  
                                 </div>
                             </div>
-                            </li>
-                            <li>
-                                <div class="prison">
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="prison">
                                 <img src="img/section1_1.jpg" alt="덮밥">
                                 <div class="sec1Textbox box2">
                                     <p class="menu">텐동</p>
@@ -66,9 +90,9 @@
                                     </p>  
                                 </div>
                             </div>
-                            </li>
-                            <li>
-                                <div class="prison">
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="prison">
                                 <img src="img/section1_2.jpg" alt="덮밥">
                                 <div class="sec1Textbox box3">
                                     <p class="menu">규동</p>
@@ -76,34 +100,72 @@
                                         고칸만의 특제 간장소스에 볶아낸 우삼겹을<br> 따뜻한 밥과 노른자와 함께 비벼드시는 덮밥입니다.
                                     </p>  
                                 </div>
-                                </div>
-                            </li>
-                        </ul>
+                            </div>
+                        </div>
                     </div>
-                    <div class="items">
-                        <ul>
-                            <li class="on"></li>
-                            <li></li>
-                            <li></li>
-                        </ul>
-                    </div>
+                    <div class="swiper-pagination"></div>
                 </div>
             </section>
-            <div class="container_Txt1">
-                <div class="txt">덮밥에 매료되다</div>
+            <section class="container_Txt1 BRAND">
+                <h2 class="txt">덮밥에 매료되다</h2>
                 <div class="logo">GoKan</div>
-            </div>
-            <div class="container_img">
+                <p style="padding-top: 50px;"><strong style="font-weight: 700; font-size:30px; padding-top: 50px;">
+                    덮밥은 든든함이다. 고칸</strong><br><br>
+                    청결한 매장에서 당일원칙을 준수하는 프리미엄 덮밥 입니다.<br>
+                    고칸은 포만감과 든든함, 맛과 퀄리티를 보장합니다.<br>
+                    합리적인 가격으로 고객의 만족도를 우선시 합니다.<br><br>
+                    일상 속에서 든든함을 느껴보세요.<br><br>
+                    
+                    <p>고칸대표이사<br>허성일</p>
+                </p>
+            </section>
+            <section class="container_img">
                 <div class="txtbox1">
                     <p>고칸은 모든 재료는</p><p>당일소진을 원칙으로합니다. </p>
                 </div>
-            </div>
-            <section class="section sec2">
-
             </section>
-        </div>
+            <section class="container_menu"> 
+                <h2 class="txt" style="text-align: center;">GoKan<br><i style="font-size:48px">MENU</i></h2>
+                <p class="Stxt" style="font-size:20px;">
+                    고칸의 신선하고 다양한 덮밥들
+                </p>
+                <div class="Smenu" style="padding-top:30px">
+                    <ul>
+                        <li>
+                            <figure>
+                                <img src="img/menu1.png" height="158" alt="">                                  
+                            </figure>
+                            <p>텐동</p>
+                            <a href="#" style="padding:10px 0px 10px 0px;">텐동 튀김메뉴</a>
+                        </li>
+                        <li>
+                            <figure>
+                                <img src="img/menu2.png" alt="">                                  
+                            </figure>
+                            <p>보쌈동</p>
+                            <a href="#"  style="padding:10px 0px 10px 0px;">보쌈동 고기메뉴</a>
+                        </li>
+                        <li>
+                            <figure>
+                                <img src="img/menu3.png" alt="">                                  
+                            </figure>
+                            <p>타마코동</p>
+                            <a href="#">타마코동 타마코메뉴</a>
+                        </li>
+                        <li>
+                            <figure>
+                                <img src="img/menu4.png" alt="">                                  
+                            </figure>
+                            <p>니쿠동</p>
+                            <a href="#"style="padding:10px 0px 10px 0px;">니쿠동 고기메뉴</a>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+        </main>
         <footer id="footer"></footer>
     </div>
-    <script src="js/index.js"></script>
+<script src="js/index.js"></script>
+
 </body>
 </html>
