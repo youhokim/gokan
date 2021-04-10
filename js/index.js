@@ -2,7 +2,7 @@
 $(".navUl>li").stop().hover(function(){
     $(this).children(".sub_nav").slideDown();
 },function(){
-    $(".navUl>li").stop().removeClass("hover");
+    $(".navUl>li").removeClass("hover");
     $(this).children(".sub_nav").slideUp();
 });
 /*반응형 메뉴 */

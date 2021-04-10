@@ -12,8 +12,14 @@
     <link rel="stylesheet" href="css/Mobalie.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/calendar.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.8.18/themes/base/jquery-ui.css" type="text/css" /> 
+    <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBwlNqAEil52XRPHmSVb4Luk18qQG9GqcM&sensor=false&language=en"></script> <!--구글맵 지도-->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>  
+    <script src="http://code.jquery.com/ui/1.8.18/jquery-ui.min.js"></script>
 </head>
 <body>
     <div id="wrap">
@@ -125,11 +131,11 @@
                 </div>
             </section>
             <section class="container_menu"> 
-                <h2 class="txt" style="text-align: center;">GoKan<br><i style="font-size:48px">MENU</i></h2>
-                <p class="Stxt" style="font-size:20px;">
+                <h2 class="txt">GoKan<br><i style="font-size:48px">MENU</i></h2>
+                <p class="Stxt">
                     고칸의 신선하고 다양한 덮밥들
                 </p>
-                <div class="Smenu" style="padding-top:30px">
+                <div class="Smenu">
                     <ul>
                         <li>
                             <figure>
@@ -162,6 +168,355 @@
                     </ul>
                 </div>
             </section>
+            <section class="container_store">
+                <h2 class="txt dis_block">Store</h2>
+                <p class="Stxt">언제나 여러분에 곁에 있는 고칸입니다.</p>
+                <div id="map"></div>
+                <!-- 예) new google.maps.LatLng(좌표, 좌표) -->
+            <script> 
+                function initialize() { 
+                var myLatlng = new google.maps.LatLng(37.27278, 127.13749); // 좌표값
+                var mapOptions = { 
+                        zoom: 14, // 지도 확대레벨 조정
+                        center: myLatlng, 
+                        // mapTypeId: google.maps.MapTypeId.ROADMAP 
+                } 
+                var map = new google.maps.Map(document.getElementById('map'), mapOptions);
+                var marker = new google.maps.Marker({ 
+                position: myLatlng, 
+                map: map, 
+                title: "고칸" // 마커에 마우스를 올렸을때 간략하게 표기될 설명글
+                });
+            } 
+                window.onload = initialize;
+            </script>
+
+            </section>
+            <section class="container_franchise">
+                <article>  
+                    <h2 class="txt">Franchise</h2>
+                    <p class="Stxt">고칸과 함께 하실 점주님들을 모집합니다.</p>
+                    <ul class="Ftext-box">
+                        <li>
+                            <strong>1</strong>
+                            <h3>수익의 극대화</h3>
+                            <p>효율적인 이득을 위해 빠른 회전이 가능한 운영관리 시스템</p>
+                        </li>
+                        <li>
+                            <strong>2</strong>
+                            <h3>높은 매출 달성</h3>
+                            <p>싸고 질 높은 재료를 도매업자를 통해 이윤을 남기고 빠르고 든든하여 바쁜 직장인, 학생 모두 공략합니다.</p>
+                        </li>
+                        <li>
+                            <strong>3</strong>
+                            <h3>인건비 축소</h3>
+                            <p>키오스크 주문방식을 적극 활용한 인건비 절감</p>
+                        </li>
+                        <li>
+                            <strong>4</strong>
+                            <h3>소형 매장</h3>
+                            <p>최소 평수로 최소 투자비용을 낮춥니다</p>
+                        </li>
+                    </ul>
+                    <h2 style="margin-top:5%;">투자 비용 안내</h2>
+                    <table class="investment-costs">
+                        <colgroup>
+                            <col width="210px"/>
+                            <col width="30%"/>
+                            <col width="180px"/>
+                            <col width="190px"/>
+                        </colgroup>
+                        <thead>
+                            <th class="th">항목</th>
+                            <th class="th"></th>
+                            <th class="text-center th">금액</th>
+                            <th class="th">비고</th>
+                        </thead>
+                        <tbody class="tbody1">
+                            <tr>
+                                <td>가맹비</td>
+                                <td></td>
+                                <td class="text-center">1,000</td>
+                                <td>소멸성</td>
+                            </tr>
+                            <tr>
+                                <td>교육비</td>
+                                <td></td>
+                                <td class="text-center">100</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>집기 및 비품</td>
+                                <td></td>
+                                <td class="text-center">1,800</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>인테리어</td>
+                                <td></td>
+                                <td class="text-center">4,000</td>
+                                <td></td>
+                            </tr>
+                            
+                        </tbody>
+                        <tbody>
+                            <tr>
+                                <th class="th" style="text-align: left;">합계</th>
+                                <td class="th"></td>
+                                <td class="text-center th">6900</td>
+                                <td class="th"></td>
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr>
+                                <th class="th border-b0" style="text-align: left;">보증금액</th>
+                                <td class="th border-b0"></td>
+                                <td class="text-center th border-b0">500</td>
+                                <td class="th border-b0">보증보험 가능</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <ul class="investment-costs2">
+                        <li><span class="star">*</span> 인테리어 비용은 이해를 돕기 위한 예상비용 측정입니다.</li>
+                        <li><span class="star">*</span> 고칸 개설 가능 평수는 20평입니다.</li>
+                        <li><span class="star">*</span> 매장 상황에 따라 추가 비용은 변동 될 수 있습니다.</li>
+                        <li><span class="star">*</span> 로열티는 월 매출 2%이며 광고비는 월 매출의 3%입니다.</li>
+                        <li><span class="star">*</span> 전기용량 23kw 필요합니다.</li>
+                    </ul>
+                </article>
+            </section>
+            <section class="startup-Inquiry">
+                <h2 class="txt dis_block" style="margin-bottom:5%">창업문의</h2>
+                <div class="Inquiry">
+                    <form action="Inquiry.do" method="post" id="datepicker">
+                        <fieldset>
+                            <legend>창업문의 리스트</legend>
+                            <p style="padding-left:5%">전체 항목 필수사항 기입입니다 <span class="star2">*</span></p>
+                           <div class="main_box">
+                            <div class="mainForm">
+                                <ul class="main-itemBox">
+                                    <li>
+                                        <label for="name">
+                                            이름 <span class="star2">*</span><br>
+                                            <input type="text" id="name" placeholder="이름" required minlength="2">
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label for="email">
+                                            이메일 <span class="star2">*</span><br>
+                                            <input type="email" id="email" placeholder="이메일"required minlength="2">
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label for="age">
+                                            연령대<span class="star2">*</span><br>
+                                            <input type="number" id="age" placeholder="연령대"required minlength="2">
+                                        </label>
+                                    </li>
+                                    <li class="choice">
+                                        <label for="experience">
+                                            외식 업종 창업 경험<span class="star2">*</span><br>
+                                            <input type="text" id="experience" name="experience" value="" placeholder="클릭해주세요" disabled>
+                                        </label>
+                                        <div class="select_area">
+                                            <ul class="select_Box">
+                                                <li class="select_items">
+                                                    <label for="true">
+                                                        <input type="radio"name="cho" id="true" value="있다" checked>
+                                                        <span class="active">있다.</span>
+                                                    </label>
+                                                </li>
+                                                <li class="select_items">
+                                                    <label for="false">
+                                                        <input type="radio"name="cho" id="false" value="없다">
+                                                        <span>없다.</span>
+                                                    </label>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <label for="Bname">
+                                            외식업종 운영 경험시 브랜드명<br>
+                                            <input type="text" id="Bname" placeholder="업종을 적어 주세요." minlength="2">
+                                        </label>
+                                    </li>
+                                </ul>
+                                <ul class="main-itemBox">
+                                    <li>
+                                        <label for="phone">
+                                            핸드폰 <span class="star2">*</span><br>
+                                            <input type="number" id="phone" placeholder="번호"required minlength="11">
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label for="amount">
+                                            점포유무와 갯수 <span class="star2">*</span><br>
+                                            <input type="text" id="amount" placeholder="점포유무"required>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label for="invest">
+                                            투자 비용 <span class="star2">*</span><br>
+                                            <input type="text" id="invest"placeholder="투자 비용을 적어 주세요"required>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label for="root">
+                                            고칸 유입경로 <span class="star2">*</span><br>
+                                            <input type="text" id="root"placeholder="유입 경로를 적어주세요">
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label for="D_day">
+                                            희망 오픈일<br>
+                                            <input type='text' id="Date" name="D_day" placeholder="옆 달력을 눌러주세요"/">
+                                        </label>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="main-itemBox">
+                                <textarea name="main_contents" id="main_contents" rows="10" maxlength="500" placeholder="문의내용 입력해주세요."></textarea>
+                            </div>
+                            <div class="main_privacy">
+                                <h3>개인정보 수집/ 이용동의 <span class="star2">*</span></h3>
+                                <div class="main_privacy_items">
+                                    <h3>수집하는 개인정보의 항목</h3>
+                                    <p>이름, 이메일, 연령대, 외식 업종 창업 경험, 외식업종 운영 경험시 브랜드명,<br>
+                                        핸드폰, 점포유무와 갯수, 투자 비용, 고칸 유입경로,희망 오픈일</p>
+                                </div>
+                                <div class="main_privacy_items">
+                                    <h3>개인정보의 수집 및 이용목적</h3>
+                                    <p>가맹점 개별 문의에 대한 상담</p>
+                                </div>
+                                <div class="main_privacy_items">
+                                    <h3>개인정보의 보유 및 이용기간</h3>
+                                    <p>보유 및 이용기간은 1년으로 하며, 기간 경과 후 가맹본부는 해당자료를 지체 없이 파기 합니다.</p>
+                                </div>
+                            </div>
+                           </div>
+                            <div class="main_form_submit">
+                                <button type="submit" class="main_form_submit_bt">
+                                    <span class="main-form__submit-text">Put in for</span>
+                                </button>
+                            </div>
+                        </fieldset>
+                    </form>
+                </div>
+                <script>
+                    $("li.choice").click(function(){
+                    $(this).children(".select_area").toggleClass("active");
+                    })
+                    $("input[name='cho']").change(function(){
+                        $(".select_items label span").removeClass("active");
+                        $(this).next().addClass("active");
+                        $(".select_area").removeClass("active");
+                        check0();
+                    })
+                    function check0(){
+                        var inputVal=$("input[name='cho']:checked").val();
+                        $("input[name='experience']").attr("value",inputVal)
+                    }
+                    $(function() {
+                $( "#Date" ).datepicker({
+                    monthNames: ['1월','2월','3월','4월','5월','6월','7월','8월','9월','10월','11월','12월'], 
+                    monthNamesShort: ['1월','2월','3월','4월','5월','6월','7월','8월','9월','10월','11월','12월'],
+                    dayNames: ['일','월', '화', '수', '목', '금', '토'],
+                    dayNamesShort: ['일','월', '화', '수', '목', '금', '토'],
+                    dayNamesMin: ['일','월', '화', '수', '목', '금', '토'],
+                    showMonthAfterYear: "true",
+                    yearSuffix:"년",
+                    showAnim: "slide",
+                    dateFormat:"yy,mm,dd",
+                    showOn:"button",
+                    buttonImage: "/img/calenda.png",
+                });
+            })
+                </script>
+            </section>
+            <section class="contact">
+                <div class="contact_title">
+                    <h2 class="txt">contact</h2>
+                    <p class="Stxt">점포제안 제휴 문의 등 기타 문의사항을 남기실 수 있습니다.<br>여러분과 소통하는 고칸이 되겠습니다.</p>
+                </div>
+                <div class="contact_button">
+                    <button type="button" class="contact_button_bt">
+                        <span class="contact__button-text">Inquire</span>
+                    </button>
+                    <div class="contact_modal animate__animated animate__fadeInDown ">
+                        <div class="contact_con">
+                            <h2>contact</h2>
+                            <form action="contact.do" method="post" id="contact">
+                                <fieldset>
+                                    <legend>문의사항 리스트</legend>
+                                    <p>전체 항목 필수사항 기입입니다 <span class="star2">*</span></p>
+                                    <div class="mainForm">
+                                        <ul class="main_itemBox">
+                                            <li class="main_items">
+                                                <label for="name">
+                                                    이름 <span class="star2">*</span><br>
+                                                    <input type="text" id="name" placeholder="이름" required minlength="2">
+                                                </label>
+                                            </li>
+                                            <li class="main_items">
+                                                <label for="email">
+                                                    이메일 <span class="star2">*</span><br>
+                                                    <input type="email" id="email" placeholder="이메일"required minlength="2">
+                                                </label>
+                                            </li>
+                                            <li class="main_items">
+                                                <label for="phone">
+                                                    핸드폰 <span class="star2">*</span><br>
+                                                    <input type="number" id="phone" placeholder="번호"required minlength="11">
+                                                </label>
+                                            </li>
+                                        </ul>
+                                        <div class="main-itemBox">
+                                            <textarea name="main_contents" id="main_contents" rows="10" maxlength="500" placeholder="문의내용 입력해주세요."></textarea>
+                                        </div>
+                                    </div>
+                                    <div class="main_privacy">
+                                        <h2>개인정보 수집/ 이용동의 <span class="star2">*</span></h2>
+                                        <div class="main_privacy_itemsBox">
+                                            <div class="main_privacy_items">
+                                                <h3>수집하는 개인정보의 항목</h3>
+                                                <p>이름, 이메일, 핸드폰, 문의내용</p>
+                                            </div>
+                                            <div class="main_privacy_items">
+                                                <h3>개인정보의 수집 및 이용목적</h3>
+                                                <p>고객불만사항, 문의사항 응답 및 고객 손해 배상 및 보험처리,<br>서비스 향상을 위한 내부 교육자료 활용 등</p>
+                                            </div>
+                                            <div class="main_privacy_items">
+                                                <h3>개인정보의 보유 및 이용기간</h3>
+                                                <p>보유 및 이용기간은 1년으로 하며, 기간 경과 후 가맹본부는 해당자료를 지체 없이 파기 합니다.<br>
+                                                (단, 전자상거래 등에서의 소비자보호에 관한 법률에 따라 고객의 불만 또는 분쟁처리에 관한 기록은 3년간 보관됩니다.)</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="main_form_submit">
+                                        <button type="submit" class="main_form_submit_bt">
+                                            <span class="main-form__submit-text">Send</span>
+                                        </button>
+                                    </div>
+                                </fieldset>
+                            </form>
+                            <div class="closeBox animate__animated ">
+                                <span class="closeitems one"></span>
+                                <span class="closeitems two"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <script>
+                $(".contact_button_bt").click(function(){
+                    $(".contact_modal").show("active");
+                    console.log("dasdsad");
+                });
+                $(".closeBox").click(function(){
+                    $(".contact_modal").hide();
+                });
+            </script>
         </main>
         <footer id="footer"></footer>
     </div>

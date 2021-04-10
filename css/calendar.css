@@ -1,0 +1,11 @@
+@charset "utf-8";
+table.ui-datepicker-calendar tbody>tr>td>a{text-align: center !important;}
+table.ui-datepicker-calendar thead>tr>th{color:#445 !important;}
+.ui-datepicker-current{display:none;}
+.ui-widget-header{background: none !important; border: none !important;}
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default{border:0 !important;background: #fff !important; color:#444 !important;}
+.ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active{border: 1px solid #ededed !important; background: #55a1ff !important; color: #fff !important;}
+.ui-datepicker-week-end:first-child{color: #f34949 !important;}
+.ui-datepicker-week-end:last-child{color:#4242e6 !important}
+/* form{display: flex; align-items: center;} */
+
