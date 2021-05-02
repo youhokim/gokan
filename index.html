@@ -116,7 +116,7 @@
             <section id="brand" class="container_Txt1 BRAND">
                 <h2 class="txt">덮밥에 매료되다</h2>
                 <div class="logo">GoKan</div>
-                <p style="padding-top: 50px;"><strong style="font-weight: 700; font-size:30px; padding-top: 100px;">
+                <p style="padding-top: 50px;line-height: 1.7em;"><strong style="font-weight: 700; font-size:30px; padding-top: 100px;">
                     덮밥은 든든함이다. 고칸</strong><br><br>
                     청결한 매장에서 당일원칙을 준수하는 프리미엄 덮밥 입니다.<br>
                     고칸은 포만감과 든든함, 맛과 퀄리티를 보장합니다.<br>
@@ -198,22 +198,22 @@
                     <h2 class="txt">Franchise</h2>
                     <p class="Stxt">고칸과 함께 하실 점주님들을 모집합니다.</p>
                     <ul class="Ftext-box">
-                        <li>
+                        <li class="franchise_ani animate__animated animate__fadeInUp animate__delay-1s">
                             <strong>1</strong>
                             <h3>수익의 극대화</h3>
                             <p>효율적인 이득을 위해 빠른 회전이 가능한 운영관리 시스템</p>
                         </li>
-                        <li>
+                        <li class="franchise_ani animate__animated animate__fadeInUp animate__delay-2s">
                             <strong>2</strong>
                             <h3>높은 매출 달성</h3>
                             <p>싸고 질 높은 재료를 도매업자를 통해 이윤을 남기고 빠르고 든든하여 바쁜 직장인, 학생 모두 공략합니다.</p>
                         </li>
-                        <li class="pt10pb70">
+                        <li class="franchise_ani animate__animated animate__fadeInUp animate__delay-3s pt10pb70s">
                             <strong>3</strong>
                             <h3>인건비 축소</h3>
                             <p>키오스크 주문방식을 적극 활용한 인건비 절감</p>
                         </li>
-                        <li class="pt10pb70">
+                        <li class="franchise_ani animate__animated animate__fadeInUp animate__delay-4s pt10pb70">
                             <strong>4</strong>
                             <h3>소형 매장</h3>
                             <p>최소 평수로 최소 투자비용을 낮춥니다</p>
@@ -285,6 +285,17 @@
                         <li><span class="star">*</span> 전기용량 23kw 필요합니다.</li>
                     </ul>
                 </article>
+                <script>
+                    $(window).on("scroll",ConFade);
+
+                    function ConFade(){
+                    var scrollTop=$(window).scrollTop();
+                    console.log(scrollTop);
+                    if(scrollTop>3500){
+                        $(".franchise_ani").css('display','block');
+                    }
+                }
+                </script>
             </section>
             <section id="Inquiry" class="startup-Inquiry">
                 <h2 class="txt dis_block" style="margin-bottom:10%">창업문의</h2>
@@ -444,11 +455,11 @@
                     <button type="button" class="contact_button_bt">
                         <span class="contact__button-text">Inquire</span>
                     </button>
-                    <div class="contact_modal animate__animated animate__fadeInDown ">
+                    <div class="contact_modal animate__animated ">
                         <div class="contact_con">
                             <div style="display:flex;justify-content:space-between;margin-bottom: 3%;">
-                                <h2>contact</h2>
-                                <div class="closeBox animate__animated ">
+                                <h2 style="font-size:2em">contact</h2>
+                                <div class="closeBox ">
                                     <span class="closeitems one"></span>
                                     <span class="closeitems two"></span>
                                 </div>
@@ -566,12 +577,12 @@
                             </li>
                         </ul>
                     </li>
-                    <li class="footer_list items" style="margin:5% 0;font-size:20px">
+                    <li class="footer_list items" style="margin:5% 0;font-size:18px">
                         <a href="#">개인정보취급방침</a>
                         <a href="#">개설문의</a>
                     </li>
                     <li class="items">
-                        <p style="line-height: 42px; font-size: 20px;">
+                        <p style="line-height: 42px; font-size: 15px;">
                             <span class="FST">상호</span>: 성일 프라자 
                             <span class="FST">주소</span>: 경기 용인시 기흥구<br>
                             <span class="FST">전화</span>:010-xxxx-xxxxxxxx<br>

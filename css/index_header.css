@@ -2,8 +2,8 @@
 /*인덱스 기본값*/
 #wrap{width: 100%;height: auto;}
 #header{width: 100%;height: auto;display: flex;justify-content: space-between;position: fixed;top: 0;left: 0;z-index: 3;background:#fff;}
-#header .logo{width :auto;margin-left: 5%;font-size: 5em;font-weight: bold;}
-#header .logo a{color:#333;}
+#header .logo{width :auto;margin-left: 5%;font-size: 4em;font-weight: bold; padding-top:20px}
+#header .logo a{color:#333;font-family: "NanumBarunGothic",serif;}
 #header .Snav{display:none;}
 #header .navgnb{display:none;}
 #header .nav{width: 60%;margin-right: 5%;}

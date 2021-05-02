@@ -2,7 +2,7 @@
 img{width: 100%;height: 100%;}
 .main{width: 100%;margin-top: 113px;}
 i{font-style: unset;}
-.txt{display: inline-block;font-size:50px;width: auto;color: #815e4b;position: relative; text-align: center;}
+.txt{display: inline-block;font-size:50px;width: auto;color: #815e4b;position: relative; text-align: center; font-family: "NanumBarunGothic",serif;}
 .Stxt{color: #aaa;margin-top: 100px;margin-bottom:30px; text-align: center;}
 section{margin-bottom:10%}
 section i{font-size: 48px}
@@ -11,6 +11,7 @@ fieldset{border: 0;}
 legend{font:0/0 s;}
 .dis_block{display: block !important;}
 span.star2{color: #de3f3f; font-size:20px; vertical-align: middle;}
+body *{font-family: "NanumBarunGothic","san-selrif";}
 /*sec1 시작*/
 .sec1{width: 100%;height: 100vh;}
 /*스와이프*/
@@ -29,6 +30,7 @@ span.star2{color: #de3f3f; font-size:20px; vertical-align: middle;}
 .sec1 .sec1Textbox .Mexplanation{font-size: 30px;color: #eef;margin: 20px 0px 0px 10px;line-height: 60px;}
 .sec1 .prison{width: 100%;height: 100%;position: relative;}
 .sec1 .prison::after{content:"";width:100%;height: inherit;position: absolute;top: 0;left: 0;background:#00000030;}
+.container_img .txtbox1 p{font-size: 35px; font-weight:400}
 /*container_Txt1 시작*/
 .container_Txt1{width:100%;text-align: center;margin-bottom: 50px;}
 .container_Txt1 .txt::before{display: block;content: "";width: 100%;height: 4px;position: absolute;top:-20px;background:#815e4b;}
@@ -49,6 +51,7 @@ span.star2{color: #de3f3f; font-size:20px; vertical-align: middle;}
 .container_franchise article{display:flex;flex-direction:column;align-items:center;}
 .container_franchise .text-center{text-align: center !important;}
 .container_franchise .border-b0{border-bottom: 0 !important;}
+.container_franchise ul>li{display: none;}
 .container_franchise ul>li>strong{font-size:30px;}
 .container_franchise ul>li>p{font-size:19px;line-height: 2;}
 .container_franchise ul.Ftext-box>li{border: 1px solid; text-align: center; padding:10px;}
