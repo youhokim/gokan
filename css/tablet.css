@@ -22,9 +22,11 @@
     .txtbox1{font-size: 45px;}
     .Smenu>ul{display:flex;flex-wrap: wrap; justify-content:space-around;margin:0 auto;}
     .Smenu>ul>li img{width:50%}
+    .container_franchise .Ftext-box{grid-template-rows:repeat(2,250px);}
   }
   
   @media only screen and (min-width:768px) and (max-width:1092px) {
     .Snav{display: block!important;}
     .navgnb{display: block!important;}
+    .container_franchise .Ftext-box{grid-template-rows:repeat(2,250px);}
   }
