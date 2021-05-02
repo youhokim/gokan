@@ -21,4 +21,14 @@
     .txtbox1{font-size: 35px;}
     .Smenu>ul{display:flex;flex-wrap: wrap; justify-content:space-around;margin:0 auto;}
     .Smenu>ul>li img{width:100%}
+    .Inquiry .mainForm {grid-template-columns: repeat(auto-fill, minmax(300px,1fr));}
+    .container_franchise .Ftext-box {width:100%;}
+    .pt10pb70{padding:10px 0px 70px 0px !important}
+    /*footer*/
+    #footer .footer_content{justify-content:center !important;}
+    #footer .footer_content *{text-align:center;}
+    .items:nth-child(1){order: 3;}
+    .items:nth-child(2){order: 1;}
+    .items:nth-child(3){order: 2;}
+
 }

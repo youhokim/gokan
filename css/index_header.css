@@ -1,79 +1,16 @@
 @charset "utf-8";
 /*인덱스 기본값*/
-#wrap{
-    width: 100%;
-    height: auto;
-}
-
-#header{
-    width: 100%;
-    height: auto;
-    display: flex;
-    justify-content: space-between;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 3;
-    background:#fff;
-}
-#header .logo{
-    width :auto;
-    margin-left: 5%;
-    font-size: 5em;
-    font-weight: bold;
-}
-#header .logo a{
- color:#333;
-}
+#wrap{width: 100%;height: auto;}
+#header{width: 100%;height: auto;display: flex;justify-content: space-between;position: fixed;top: 0;left: 0;z-index: 3;background:#fff;}
+#header .logo{width :auto;margin-left: 5%;font-size: 5em;font-weight: bold;}
+#header .logo a{color:#333;}
 #header .Snav{display:none;}
 #header .navgnb{display:none;}
-#header .nav{
-    width: 60%;
-    margin-right: 5%;
-}
-#header .nav .navUl{
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
-}
-#header .nav .navUl>li{
-    width: 20%;
-    line-height: 108px;
-    font-size: 20px;
-    font-weight: bold;
-    position: relative;
-    cursor: pointer;
-}
-#header .nav .navUl>li:hover> a.bar::after{
-    left: 0%;
-    opacity: 1;
-    width: 100%;
-}
-
-#header .nav .navUl>li a{
-    color: #444;
-    position: relative;
-}
-#header .nav .navUl>li a.bar::after{
-    content: " ";
-    position: absolute;
-    bottom: -10px;
-    left: 50%;
-    width: 0;
-    height: 5px;
-    background: #444;
-    transition: all 0.2s ease-in-out;
-    opacity: 0;
-}
-#header .nav .sub_nav{
-    width: 135px;
-    position:absolute;
-    left: -16%;
-    display : none;
-    background: #fff;
-}
-#header .nav .sub_nav li{
-    font-size: 15px;
-    text-align: center;
-    vertical-align: center;
-}
+#header .nav{width: 60%;margin-right: 5%;}
+#header .nav .navUl{width: 100%;display: flex;justify-content: space-around;}
+#header .nav .navUl>li{width: 20%;line-height: 108px;font-size: 20px;font-weight: bold;position: relative;cursor: pointer;}
+#header .nav .navUl>li:hover> a.bar::after{left: 0%;opacity: 1;width: 100%;}
+#header .nav .navUl>li a{color: #444;position: relative;}
+#header .nav .navUl>li a.bar::after{content: " ";position: absolute;bottom: -10px;left: 50%;width: 0;height: 5px;background: #444;transition: all 0.2s ease-in-out;opacity: 0;}
+#header .nav .sub_nav{width: 135px;position:absolute;left: -16%;display : none;background: #fff;}
+#header .nav .sub_nav li{font-size: 15px;text-align: center;vertical-align: center;}

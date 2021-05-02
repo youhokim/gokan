@@ -1,0 +1,11 @@
+@charset "utf-8";
+#footer{border-top: 2px solid #333; padding-top:2%}
+#footer .logo{width :auto;margin-left: 5%;font-size: 5em;font-weight: bold;}
+#footer .logo a{color:#333;}
+#footer .fnav *{display:block; color:#333;font-size:2em; font-weight:bold;margin-left:5%}
+#footer .footer_content{display:flex; justify-content:space-between; flex-wrap: wrap;}
+#footer .footer_list{padding-top:2%;}
+#footer .f_con{display:flex; flex-direction:column; margin-right:2%;}
+#footer .f_sns ul{display:flex;justify-content:space-between}
+#footer .f_sns li{width:33px; margin:5% 0;}
+span.FST{font-weight:bold}
