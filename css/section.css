@@ -55,7 +55,7 @@ body *{font-family: "NanumBarunGothic","san-selrif";}
 .container_franchise ul>li>strong{font-size:30px;}
 .container_franchise ul>li>p{font-size:19px;line-height: 2;}
 .container_franchise ul.Ftext-box>li{border: 1px solid; text-align: center; padding:10px;}
-.container_franchise .Ftext-box{width:70%; display:grid; grid-template-columns:repeat(auto-fill, minmax(250px,1fr));grid-template-rows:250px;grid-gap: 20px;}
+.container_franchise .Ftext-box{width:70%; display:grid; grid-template-columns:repeat(auto-fill, minmax(250px,1fr));grid-template-rows:repeat(4,250px);grid-gap: 20px;}
 .container_franchise table{border-collapse: collapse; margin:5% 0;}
 .container_franchise table *{color: #443;}
 .container_franchise table .tbody1 td{padding-top:15px;}
@@ -126,8 +126,3 @@ body *{font-family: "NanumBarunGothic","san-selrif";}
 .contact .closeBox span.closeitems{width:3px; height: 100%; position: absolute; top: 0; left: 22px; background: #fff;}
 .contact .closeBox span.closeitems.one{transform: rotate(45deg);}
 .contact .closeBox span.closeitems.two{transform: rotate(135deg);}
-
-
-@media only screen and(min-width:755px) and (max-width:1130px) {
-    .pt10pb70{padding:10px 0px 70px 0px !important}
-}
