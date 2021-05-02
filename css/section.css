@@ -128,7 +128,6 @@ body *{font-family: "NanumBarunGothic","san-selrif";}
 .contact .closeBox span.closeitems.two{transform: rotate(135deg);}
 
 
-/*팝업 미디어 사이즈*/
 @media only screen and(min-width:755px) and (max-width:1130px) {
     .pt10pb70{padding:10px 0px 70px 0px !important}
 }
