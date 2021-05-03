@@ -2,7 +2,7 @@
 #footer{border-top: 2px solid #333; padding-top:2%}
 #footer .logo{width :auto;margin-left: 5%;font-size: 4em;font-weight: bold;}
 #footer .logo a{color:#333; font-family: "NanumBarunGothic",serif;}
-#footer .fnav *{display:block; color:#333;font-size:2em; font-weight:bold;margin-left:5%}
+#footer .fnav *{display:block; color:#333;font-size:2em; font-weight:bold;margin-left:10%}
 #footer .footer_content{display:flex; justify-content:space-between; flex-wrap: wrap;}
 #footer .footer_list{padding-top:2%;}
 #footer .f_con{display:flex; flex-direction:column; margin-right:2%;}
